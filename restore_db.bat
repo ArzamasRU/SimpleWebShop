@@ -1,0 +1,1 @@
+mysql -u root -p < "src\main\resources\db\restore_db.sql"
