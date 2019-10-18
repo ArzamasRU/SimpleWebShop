@@ -10,3 +10,4 @@
 - корзина покупателя
 
 Чтобы восстановить бд необходимо запустить restore_db.bat!
+To restore the database run restore_db.bat!
