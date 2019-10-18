@@ -43,7 +43,7 @@ public class BasketController {
 			Model model) {
 		basketRepo.delete(getBasketByUserAndProductId(user, id));
 		basket(user, model);
-		model.addAttribute("message", "Product has sent to the customer");
+		model.addAttribute("message", "Product has sent");
 		return "basket";
 	}
 

@@ -30,7 +30,6 @@ public class ProductController {
 	public String sort(@RequestParam(required = false, defaultValue = "") String typeOfSort,
 			@RequestParam(required = false, defaultValue = "") String filter, Model model) {
 
-		System.out.println("sort");
 		Iterable<Product> products = productRepo.findAll();
 		if (filter != null && !filter.isEmpty()) {
 			if (typeOfSort.equals("tag")) {
