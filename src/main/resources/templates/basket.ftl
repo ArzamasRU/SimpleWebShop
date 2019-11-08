@@ -27,8 +27,8 @@
     </div>
 			<div class="col-md-8">
 				<div class="card-body">
-					<h3 class="card-title">${product.tag}</h3>
-					<p class="card-text">${product.name}</p>
+					<h3 class="card-title">${product.type}</h3>
+					<p class="card-text">${product.model}</p>
 				</div>
 				<button
 					class="btn btn-primary"

@@ -7,8 +7,8 @@ import org.springframework.data.repository.CrudRepository;
 import com.example.webshop.domain.Product;
 
 public interface ProductRepo extends CrudRepository<Product, Long> {
-	List<Product> findByTag(String tag);
-	List<Product> findByName(String name);
+	List<Product> findByType(String type);
 	Product findById(Integer id);
-	List<Product> findByNameContaining(String name);
+	Product findByModel(String model);
+	List<Product> findByModelContaining(String model);
 }

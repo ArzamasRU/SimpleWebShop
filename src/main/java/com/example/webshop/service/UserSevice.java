@@ -10,11 +10,11 @@ import com.example.webshop.repos.UserRepo;
 
 @Service
 public class UserSevice implements UserDetailsService {
-    @Autowired
-    private UserRepo userRepo;
+	@Autowired
+	private UserRepo userRepo;
 
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return userRepo.findByUsername(username);
-    }
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		return userRepo.findByUsername(username);
+	}
 }

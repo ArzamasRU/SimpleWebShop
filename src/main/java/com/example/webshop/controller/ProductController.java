@@ -32,12 +32,12 @@ public class ProductController {
 
 		Iterable<Product> products = productRepo.findAll();
 		if (filter != null && !filter.isEmpty()) {
-			if (typeOfSort.equals("tag")) {
-				products = productRepo.findByTag(filter);
-				model.addAttribute("filterByTag", filter);
-			} else if (typeOfSort.equals("name")) {
-				products = productRepo.findByNameContaining(filter);
-				model.addAttribute("filterByName", filter);
+			if (typeOfSort.equals("type")) {
+				products = productRepo.findByType(filter);
+				model.addAttribute("filterByType", filter);
+			} else if (typeOfSort.equals("model")) {
+				products = productRepo.findByModelContaining(filter);
+				model.addAttribute("filterByModel", filter);
 			}
 		} else {
 			products = productRepo.findAll();

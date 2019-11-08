@@ -12,12 +12,12 @@
 				type="text"
 				name="filter"
 				class="form-control"
-				value="${filterByTag?ifExists}"
-				placeholder="Search by tag">
+				value="${filterByType?ifExists}"
+				placeholder="Search by type">
 			<input
 			type="hidden"
 			name="typeOfSort"
-			value="tag" />
+			value="type" />
 			<button
 				type="submit"
 				class="btn btn-primary ml-2">Search</button>
@@ -72,8 +72,8 @@
 		    </div>
 					<div class="col-md-8">
 						<div class="card-body">
-							<h3 class="card-title">${product.tag}</h3>
-							<p class="card-text">${product.name}</p>
+							<h3 class="card-title">${product.type}</h3>
+							<p class="card-text">${product.model}</p>
 						</div>
 						<button
 							class="btn btn-primary"

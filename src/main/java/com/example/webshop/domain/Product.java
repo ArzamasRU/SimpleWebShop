@@ -11,8 +11,8 @@ public class Product {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 
-	private String name;
-	private String tag;
+	private String model;
+	private String type;
 	private String filename;
 
 	public String getFilename() {
@@ -23,12 +23,12 @@ public class Product {
 		this.filename = filename;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setModel(String model) {
+		this.model = model;
 	}
 
-	public String getName() {
-		return name;
+	public String getModel() {
+		return model;
 	}
 
 	public Integer getId() {
@@ -39,11 +39,11 @@ public class Product {
 		this.id = id;
 	}
 
-	public String getTag() {
-		return tag;
+	public String getType() {
+		return type;
 	}
 
-	public void setTag(String tag) {
-		this.tag = tag;
+	public void setType(String type) {
+		this.type = type;
 	}
 }
