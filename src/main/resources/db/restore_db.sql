@@ -1,3 +1,9 @@
+DROP SCHEMA IF EXISTS db_example;
+CREATE SCHEMA db_example DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+drop user IF EXISTS 'springuser'@'%';
+create user 'springuser'@'%' identified by 'ThePassword'; -- Creates the user
+grant all on db_example.* to 'springuser'@'%';  -- Gives all privileges to the new user on the newly created database
+USE db_example;
 -- MySQL dump 10.13  Distrib 8.0.17, for Win64 (x86_64)
 --
 -- Host: localhost    Database: db_example
